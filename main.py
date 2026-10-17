@@ -147,7 +147,7 @@ while running:
     # ----------------------
     racers = [player] + ai_karts
 
-    ranking = sorted(
+       ranking = sorted(
         racers,
         key=lambda kart: (kart.x, -kart.y),
         reverse=True
@@ -163,12 +163,12 @@ while running:
     # ----------------------
     # 화면 그리기
     # ----------------------
-   track.draw(screen, camera)
+    track.draw(screen, camera)
 
-   for ai in ai_karts:
-    ai.draw(screen, camera)
+    for ai in ai_karts:
+        ai.draw(screen, camera)
 
-player.draw(screen, camera)
+    player.draw(screen, camera)
 
     ui.draw_speedometer(screen, player.speed_kmh())
     ui.draw_nitro(screen, player.nitro)
