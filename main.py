@@ -147,7 +147,7 @@ while running:
     # ----------------------
     racers = [player] + ai_karts
 
-       ranking = sorted(
+    ranking = sorted(
         racers,
         key=lambda kart: (kart.x, -kart.y),
         reverse=True
